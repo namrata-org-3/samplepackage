@@ -25,13 +25,13 @@ jobs:
           registry-url: https://npm.pkg.github.com
           token: ${{ matrix.token }}
 
+      - name: git pull before bump
+        run: git pull
+        
       - name: setup-npmrc
         id: setup-npmrc
         run: |
           echo "//npm.pkg.github.com/:_authToken=${{ matrix.token }}" > .npmrc
-
-      - name: git pull before bump
-        run: git pull
 
       - name: publish new-pkg-public-without-repo
         if: always()
