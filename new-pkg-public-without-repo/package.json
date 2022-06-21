@@ -1,6 +1,6 @@
 {
   "name": "@namrata-org-3/new-pkg-public-without-repo",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
